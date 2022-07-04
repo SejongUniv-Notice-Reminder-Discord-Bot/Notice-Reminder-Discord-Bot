@@ -6,6 +6,10 @@
 - 세종대학교 컴퓨터공학과 20학번 박규태
 - 세종대학교 전자정보통신공학과 18학번 박상욱
 
+
+#### 참고 자료
+- https://discord.js.org/#/ discord.js의 Documentation
+
 #### 개발 언어
 Node.js
 
