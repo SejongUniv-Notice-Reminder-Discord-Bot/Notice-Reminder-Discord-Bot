@@ -9,6 +9,7 @@
 
 #### 참고 자료
 - https://discord.js.org/#/ discord.js의 Documentation
+- https://koras02.tistory.com/231 Node.js로 디스코드 봇 만들기
 
 #### 개발 언어
 Node.js
