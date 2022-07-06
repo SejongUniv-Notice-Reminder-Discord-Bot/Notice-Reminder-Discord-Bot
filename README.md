@@ -8,8 +8,9 @@
 
 
 #### 참고 자료
-- https://discord.js.org/#/ discord.js의 Documentation
-- https://koras02.tistory.com/231 Node.js로 디스코드 봇 만들기
+- [discord.js의 Documentation][1]
+- [Node.js로 디스코드 봇 만들기][2]
+- [디스코드 채널 아이디 알아내기][3]
 
 #### 개발 언어
 Node.js
@@ -20,3 +21,9 @@ Node.js
 - [ ] 타이머로 일정 시간마다 홈페이지 크롤링
 - [ ] 사용자가 명령어 입력할 시 해당 시간의 최신 공지사항 종류별로 구분하여 출력
 - [ ] 디스코드에 공지 출력 시 커스터마이징
+
+
+
+[1] : https://discord.js.org/#/
+[2] : https://koras02.tistory.com/231
+[3] : https://neony.tistory.com/3
