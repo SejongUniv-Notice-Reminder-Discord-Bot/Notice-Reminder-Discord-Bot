@@ -12,8 +12,13 @@
 - [Node.js로 디스코드 봇 만들기][2]
 - [디스코드 채널 아이디 알아내기][3]
 
+[1]:https://discord.js.org/#/
+[2]:https://koras02.tistory.com/231
+[3]:https://neony.tistory.com/3
+
 #### 개발 언어
-Node.js
+Node.js <br>
+![Node.js](https://img.shields.io/badge/Node.js-339933.svg?&style=for-the-badge&logo=Node.js&logoColor=white)
 
 ## 개발 기능
 - [ ] 세종대학교 공지 크롤링
@@ -22,8 +27,3 @@ Node.js
 - [ ] 사용자가 명령어 입력할 시 해당 시간의 최신 공지사항 종류별로 구분하여 출력
 - [ ] 디스코드에 공지 출력 시 커스터마이징
 
-
-
-[1] : https://discord.js.org/#/
-[2] : https://koras02.tistory.com/231
-[3] : https://neony.tistory.com/3
