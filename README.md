@@ -11,10 +11,12 @@
 - [discord.js의 Documentation][1]
 - [Node.js로 디스코드 봇 만들기][2]
 - [디스코드 채널 아이디 알아내기][3]
+- [디스코드 봇 하이퍼링크 보내기][4]
 
 [1]:https://discord.js.org/#/
 [2]:https://koras02.tistory.com/231
 [3]:https://neony.tistory.com/3
+[4]:https://www.codegrepper.com/code-examples/javascript/+discord.js+hyperlink+in+embed+title
 
 #### 개발 언어
 Node.js <br>
