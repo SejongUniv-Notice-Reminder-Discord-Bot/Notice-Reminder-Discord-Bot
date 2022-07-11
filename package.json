@@ -1,0 +1,22 @@
+{
+  "name": "notice-reminder-discord-bot",
+  "version": "1.0.0",
+  "description": "세종대학교 공지 알리미 디스코드 봇 제작",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SejongUniv-Notice-Reminder-Discord-Bot/Notice-Reminder-Discord-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SejongUniv-Notice-Reminder-Discord-Bot/Notice-Reminder-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/SejongUniv-Notice-Reminder-Discord-Bot/Notice-Reminder-Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^13.8.1"
+  }
+}
