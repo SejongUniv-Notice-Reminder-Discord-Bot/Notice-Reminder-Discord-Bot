@@ -9,6 +9,7 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
+    console.log(msg.content);
     if (msg.content === 'notify') {
         //const msgemb = new Discord.MessageEmbed().setDescription('[' + temp.subject + '](' + temp.link + ')');
         //const msgemb = new Discord.MessageEmbed().setDescription('[Sejong.Univ Notify Reminder](' + temp.link + ')');
