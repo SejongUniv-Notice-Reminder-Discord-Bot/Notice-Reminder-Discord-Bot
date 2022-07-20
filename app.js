@@ -11,7 +11,7 @@ client.on('ready', () => {
 
 client.on('messageCreate', async (msg) => {
     const web1 = new web();
-    if (msg.content === 'ì¼ë°˜') {
+    if (msg.content === 'ÀÏ¹İ') {
         const arr = web1.webstart("334")
         console.log(arr)
         await msg.reply(arr[0].subject + arr[0].link)
