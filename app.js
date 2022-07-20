@@ -5,7 +5,8 @@ const web = require("./web.js");
 const refresh = require("./refresh.js");
 const tag = require("./tag.json");
 const fs = require('fs');
-
+const PB = require("./phonebook.json");
+const manual = require("./manual.json");
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -27,7 +28,7 @@ client.on('messageCreate', async (msg) => {
             }, 800)
         })
     }
-    if (msg.content === "!일반") {
+    if (msg.content === "!일반" || msg.content === "!공지") {
         web1.webstart("333")
         fun();
     }
@@ -64,11 +65,37 @@ client.on('messageCreate', async (msg) => {
         fun()
 
     }
+    else if (msg.content === "!전화번호") {
+        const Embed = new Discord.MessageEmbed()
+            .setTitle("교내 시설 전화번호 준비!!!! 시작!!!!!");
+        msg.channel.send({ embeds: [Embed] });
+        for (let i = 0; i < 21; i++) {
+            const Embed = new Discord.MessageEmbed()
+                .setDescription(`부서: ${PB[i].department}\n 번호:${PB[i].number}\n\n`);
+            msg.channel.send({ embeds: [Embed] });
+        }
+        const Embed1 = new Discord.MessageEmbed()
+            .setTitle("교내 시설 전화번호 끝!!!!!!!");
+        msg.channel.send({ embeds: [Embed1] });
+
+        /*
+        "department": "교무과",
+        "position": "직원",
+        "name": "박윤주",
+        "location": "집협관 101호",
+        "number": "02-3408-4192"*/
+    }
+    else if (msg.content === "!수강편람") {
+        const Embed = new Discord.MessageEmbed()
+            .setTitle("수강편람")
+            .setDescription(manual.subject)
+            .setURL(manual.link);
+        msg.channel.send({ embeds: [Embed] });
+    }
     else if (msg.content === '!help') {
         const Embed = new Discord.MessageEmbed()
             .setTitle("공지사항 도우미!!")
-            .setDescription("!일반: 일반공지사항\n\n !입학: 학부입학관련\n\n !국제교류: 외국인 학부 / 대학원 입시, 해외 파견 / 유치 프로그램, 외국인 지원, 외국인 기숙사 등\n\n !취업: 취업 관련\n\n !장학: 장학 관련\n\n !교내모집: 조교, 근로학생등 교내 모집 공고\n\n	!입찰공고: 각종입찰 관련 공고\n\n !경시대회 / 공모전: 교내 및 교외 경시대회 및 공모전 안내")
-
+            .setDescription("!일반: 일반공지사항\n\n !입학: 학부입학관련\n\n !국제교류: 외국인 학부 / 대학원 입시, 해외 파견 / 유치 프로그램, 외국인 지원, 외국인 기숙사 등\n\n !취업: 취업 관련\n\n !장학: 장학 관련\n\n !교내모집: 조교, 근로학생등 교내 모집 공고\n\n	!입찰공고: 각종입찰 관련 공고\n\n !경시대회 / 공모전: 교내 및 교외 경시대회 및 공모전 안내\n\n    !전화번호: 교내 시설 및 학부 조교실 전화번호\n\n  !수강편람: 학번별 수강편람 정보 안내")
         msg.channel.send({ embeds: [Embed] });
     }
 });
@@ -77,15 +104,20 @@ const refresh1 = new refresh();
 
 setInterval(function () {
     setTimeout(async function () {
-        const temp = fs.readFileSync('./tag.json', 'utf8');
-        arr = JSON.parse(temp);
         function readfun(step) {
             return new Promise((res, rej) => {
                 setTimeout(() => {
-                    client.channels.cache.get('994189428903911476').send(arr[step].subject + arr[step].link);
+                    const temp = fs.readFileSync('./tag.json', 'utf8');
+                    arr = JSON.parse(temp);
+                    const Embed = new Discord.MessageEmbed()
+                        .setTitle(arr[step].subject)
+                        .setURL(arr[step].link)
+                    client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
                 }, 5000)
             })
         }
+        const temp = fs.readFileSync('./tag.json', 'utf8');
+        arr = JSON.parse(temp);
         refresh1.refreshstart();
         for (step = 0; step < 9; step++) {
             if (arr[step].flag === "1") {
@@ -93,6 +125,6 @@ setInterval(function () {
             }
         }
     }, 3000);
-}, 3000);
+}, 36000000);
 
 client.login(token.token);

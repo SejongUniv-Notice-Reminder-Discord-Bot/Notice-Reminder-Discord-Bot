@@ -1,0 +1,149 @@
+[
+    {
+        "department": "교무과",
+        "position": "직원",
+        "name": "박윤주",
+        "location": "집협관 101호",
+        "number": "02-3408-4192"
+    },
+    {
+        "department": "수업과",
+        "position": "직원",
+        "name": "이다경",
+        "location": "학생회관 205호",
+        "number": "02-3408-1872"
+    },
+    {
+        "department": "학적과",
+        "position": "직원",
+        "name": "김한열",
+        "location": "학생회관 204호",
+        "number": "02-3408-3039"
+    },
+    {
+        "department": "학생지원과",
+        "position": "직원",
+        "name": "김경택",
+        "location": "집협관 104호",
+        "number": "02-3143-8202"
+    },
+    {
+        "department": "진로취업지원센터",
+        "position": "직원",
+        "name": "홍석규",
+        "location": "학생회관 308호",
+        "number": "02-6935-2660"
+    },
+    {
+        "department": "대학일자리플러스사업단",
+        "position": "취업지원관",
+        "name": "이예진",
+        "location": "학생회관 1층",
+        "number": "02-3408-3539"
+    },
+    {
+        "department": "전산정보실",
+        "position": "조교",
+        "name": "-",
+        "location": "학술정보원 8층",
+        "number": "02-3408-3488"
+    },
+    {
+        "department": "학술정보실",
+        "position": "직원",
+        "name": "이지민",
+        "location": "학술정보원 1층",
+        "number": "02-3408-3862"
+    },
+    {
+        "department": "보건실",
+        "position": "주임",
+        "name": "한정화",
+        "location": "집현관 109호",
+        "number": "02-3408-3089"
+    },
+    {
+        "department": "인문과학대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "집현관 801호",
+        "number": "02-3408-3520"
+    },
+    {
+        "department": "사회과학대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "집현관 602호",
+        "number": "02-3408-3521"
+    },
+    {
+        "department": "경영경제대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "광개토관 809호",
+        "number": "02-3408-3486"
+    },
+    {
+        "department": "호텔관광대학 학장실",
+        "position": "조교",
+        "name": "-",
+        "location": "광개토관 501호",
+        "number": "02-3408-3516"
+    },
+    {
+        "department": "자연과학대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "영실관 105A호",
+        "number": "02-3408-3523"
+    },
+    {
+        "department": "생명과학대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "충무관 407B호",
+        "number": "02-3408-3528"
+    },
+    {
+        "department": "전자정보공학대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "충무관 1107호",
+        "number": "02-6935-2546"
+    },
+    {
+        "department": "소프트웨어융합대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "대양AI센터 401호",
+        "number": "02-3408-3527"
+    },
+    {
+        "department": "공과대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "충무관 410A호",
+        "number": "02-3408-3524"
+    },
+    {
+        "department": "예체능대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "군자관 408호",
+        "number": "02-3408-3525"
+    },
+    {
+        "department": "인문과학대학 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "집현관 801호",
+        "number": "02-3408-3520"
+    },
+    {
+        "department": "법학부 조교실",
+        "position": "조교",
+        "name": "-",
+        "location": "집현관 305A호",
+        "number": "02-3408-3318"
+    }
+]

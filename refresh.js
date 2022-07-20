@@ -36,6 +36,7 @@ class refresh {
                         link: `http://board.sejong.ac.kr/${$(key).find("td.subject > a").attr("href")}`
                     })
                 }
+
                 if (step === 8) {
                     const webJson = JSON.stringify(arr);
                     fs.writeFileSync('./tag.json', webJson);
