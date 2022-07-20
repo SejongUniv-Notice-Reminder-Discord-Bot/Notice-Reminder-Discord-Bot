@@ -55,6 +55,7 @@ client.on('messageCreate', async (msg) => {
     else if (msg.content === "!경시대회/공모전") {
         web1.webstart("341")
         fun()
+
     }
 });
 
