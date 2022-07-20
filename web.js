@@ -1,6 +1,7 @@
 const client = require('cheerio-httpcli');
+const fs = require('fs');
 
-const url = 'http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=333';
+const url = 'http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=334';
 const param = {};
 
 client.set('headers', {
@@ -21,6 +22,6 @@ client.fetch(url, param, function (err, $, res) {
         subject: $(key).find("td.subject > a").text().replaceAll('\t', '').replaceAll('\n', ''),
         link: $(key).find("td.subject > a").attr("href")
     })
-
-    console.log(arr);
+    const webJson = JSON.stringify(arr)
+    fs.writeFileSync('./temp.json', webJson)
 });

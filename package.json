@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/SejongUniv-Notice-Reminder-Discord-Bot/Notice-Reminder-Discord-Bot#readme",
   "dependencies": {
-    "discord.js": "^13.8.1"
+    "cheerio-httpcli": "^0.8.3",
+    "discord.js": "^13.8.1",
+    "fs": "^0.0.1-security"
   }
 }
