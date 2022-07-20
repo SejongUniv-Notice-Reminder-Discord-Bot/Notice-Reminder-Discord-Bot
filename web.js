@@ -16,12 +16,14 @@ class web {
                 console.log(err);
                 return;
             }
-            const key = "tr:nth-child(1)"
-            arr.push({
-                index: $(key).find(".index").text(),
-                subject: $(key).find("td.subject > a").text().replaceAll('\t', '').replaceAll('\n', ''),
-                link: $(key).find("td.subject > a").attr("href")
-            })
+            for (let i = 1; i < 4; i++) {
+                const key = `tr:nth-child(${i})`
+                arr.push({
+                    index: $(key).find(".index").text(),
+                    subject: $(key).find("td.subject > a").text().replaceAll('\t', '').replaceAll('\n', ''),
+                    link: `http://board.sejong.ac.kr/${$(key).find("td.subject > a").attr("href")}`
+                })
+            }
             const webJson = JSON.stringify(arr)
             fs.writeFileSync('./temp.json', webJson)
         });
