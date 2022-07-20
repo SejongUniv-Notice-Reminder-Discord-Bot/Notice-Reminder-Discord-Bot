@@ -15,6 +15,9 @@ client.on('message', (msg) => {
         //client.channels.cache.get('994189428903911476').send(msgemb);
         msg.reply(temp.subject + temp.link)
     }
+    if (msg.content === '일반') {
+
+    }
 });
 
 

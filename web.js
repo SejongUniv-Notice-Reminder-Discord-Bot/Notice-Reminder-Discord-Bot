@@ -1,7 +1,8 @@
 const client = require('cheerio-httpcli');
 const fs = require('fs');
+import key from "app.js"
 
-const url = 'http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=334';
+const url = `http://board.sejong.ac.kr/boardlist.do?bbsConfigFK=${key}`;
 const param = {};
 
 client.set('headers', {
