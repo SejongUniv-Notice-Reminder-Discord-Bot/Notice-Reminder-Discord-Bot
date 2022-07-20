@@ -8,13 +8,12 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', (msg) => {
-    console.log(msg.content);
+client.on('messageCreate', (msg) => {
     if (msg.content === 'notify') {
         //const msgemb = new Discord.MessageEmbed().setDescription('[' + temp.subject + '](' + temp.link + ')');
         //const msgemb = new Discord.MessageEmbed().setDescription('[Sejong.Univ Notify Reminder](' + temp.link + ')');
         //client.channels.cache.get('994189428903911476').send(msgemb);
-        msg.reply(temp.subject + temp.link)
+        msg.reply(String(temp[0].subject + temp[0].link))
     }
     if (msg.content === '일반') {
 
