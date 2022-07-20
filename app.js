@@ -9,11 +9,12 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('messageCreate', (msg) => {
+client.on('messageCreate', async (msg) => {
     const web1 = new web();
     if (msg.content === '일반') {
         const arr = web1.webstart("334")
-        msg.reply(String(arr[0].subject + arr[0].link))
+        console.log(arr)
+        await msg.reply(arr[0].subject + arr[0].link)
     }
 });
 
