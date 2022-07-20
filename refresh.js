@@ -27,7 +27,6 @@ class refresh {
                         subject: $(key).find("td.subject > a").text().replaceAll('\t', '').replaceAll('\n', ''),
                         link: `http://board.sejong.ac.kr/${$(key).find("td.subject > a").attr("href")}`
                     })
-                    console.log(truarr[step].index, $(key).find(".index").text())
                 }
                 else {
                     arr.push({
@@ -37,7 +36,6 @@ class refresh {
                         subject: $(key).find("td.subject > a").text().replaceAll('\t', '').replaceAll('\n', ''),
                         link: `http://board.sejong.ac.kr/${$(key).find("td.subject > a").attr("href")}`
                     })
-                    console.log(truarr[step].index, $(key).find(".index").text())
                 }
                 if (step === 8) {
                     const webJson = JSON.stringify(arr);
