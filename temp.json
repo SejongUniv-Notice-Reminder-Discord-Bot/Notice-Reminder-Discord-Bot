@@ -1,1 +1,17 @@
-[{"index":"번호1698","subject":"세무사 준비반 여부","link":"http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155322^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=3&whereCon=PKID=155322"},{"index":"1697","subject":"취업후 상환 학자금대출 문의","link":"http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155088^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=11&whereCon=PKID=155088"},{"index":"1696","subject":"등록금 관련 질문.","link":"http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155011^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=9&whereCon=PKID=155011"}]
+[
+	{
+		"index": "번호1698",
+		"subject": "세무사 준비반 여부",
+		"link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155322^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=3&whereCon=PKID=155322"
+	},
+	{
+		"index": "1697",
+		"subject": "취업후 상환 학자금대출 문의",
+		"link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155088^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=11&whereCon=PKID=155088"
+	},
+	{
+		"index": "1696",
+		"subject": "등록금 관련 질문.",
+		"link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155011^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=9&whereCon=PKID=155011"
+	}
+]

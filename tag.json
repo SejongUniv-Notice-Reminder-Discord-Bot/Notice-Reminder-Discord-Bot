@@ -1,30 +1,37 @@
 [
   {
-    "key": "333",
-    "index": "��ȣ1587"
-  },
-  {
-    "key": "334",
-    "index": "��ȣ81"
-  },
-  {
-    "key": "335",
-    "index": "��ȣ2130"
-  },
-  {
     "key": "336",
-    "index": "��ȣ12"
+    "flag": "1",
+    "index": "번호12",
+    "subject": "Delay of Announcement of Selectees at Internatio...",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=9809^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=336^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=7&whereCon=PKID=9809"
   },
   {
     "key": "337",
-    "index": "��ȣ2857"
+    "flag": "1",
+    "index": "번호2857",
+    "subject": "[추천채용][대기업/업계2위]홈플러스(주) 운영법무팀 채용",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155384^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=337^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=26&whereCon=PKID=155384"
   },
   {
-    "key": "338",
-    "index": "��ȣ634"
+    "key": "333",
+    "flag": "1",
+    "index": "번호1587",
+    "subject": "2023학년도 대학입학전형계획(안) 공지_ 변경",
+    "link": "/viewcount.do?rtnUrl=/boardview.do?pkid=150385^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=334^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=3857&whereCon=PKID=150385"
   },
   {
-    "key": "349",
-    "index": "��ȣ645"
+    "key": "335",
+    "flag": "1",
+    "index": "번호2130",
+    "subject": "2022-2학기 복학신청 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155319^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=99&whereCon=PKID=155319"
+  },
+  {
+    "key": "339",
+    "flag": "1",
+    "index": "번호645",
+    "subject": "[건축학과] 계약직원 모집 공고",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155383^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=339^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=25&whereCon=PKID=155383"
   }
 ]
