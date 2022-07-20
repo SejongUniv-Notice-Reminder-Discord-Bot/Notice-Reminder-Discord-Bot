@@ -77,19 +77,18 @@ const refresh1 = new refresh();
 
 setInterval(function () {
     setTimeout(async function () {
-
+        const temp = fs.readFileSync('./tag.json', 'utf8');
+        arr = JSON.parse(temp);
         function readfun(step) {
             return new Promise((res, rej) => {
                 setTimeout(() => {
-                    const temp = fs.readFileSync('./tag.json', 'utf8');
-                    arr = JSON.parse(temp);
                     client.channels.cache.get('994189428903911476').send(arr[step].subject + arr[step].link);
                 }, 5000)
             })
         }
         refresh1.refreshstart();
         for (step = 0; step < 9; step++) {
-            if (tag[step].flag === "1") {
+            if (arr[step].flag === "1") {
                 readfun(step);
             }
         }
