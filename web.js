@@ -22,7 +22,6 @@ class web {
                 subject: $(key).find("td.subject > a").text().replaceAll('\t', '').replaceAll('\n', ''),
                 link: $(key).find("td.subject > a").attr("href")
             })
-
             const webJson = JSON.stringify(arr)
             fs.writeFileSync('./temp.json', webJson)
         });
