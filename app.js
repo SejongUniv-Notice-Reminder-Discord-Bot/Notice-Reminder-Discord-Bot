@@ -12,9 +12,8 @@ client.on('ready', () => {
 client.on('messageCreate', async (msg) => {
     const web1 = new web();
     if (msg.content === '일반') {
-        const arr = web1.webstart("334")
-        console.log(arr)
-        await msg.reply(arr[0].subject + arr[0].link)
+        web1.webstart("334")
+        await msg.reply(temp[0].subject + temp[0].link)
     }
 });
 
