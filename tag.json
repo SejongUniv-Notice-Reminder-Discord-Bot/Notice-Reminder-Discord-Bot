@@ -1,37 +1,65 @@
 [
   {
     "key": "336",
-    "flag": "1",
+    "flag": "0",
     "index": "번호12",
     "subject": "Delay of Announcement of Selectees at Internatio...",
     "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=9809^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=336^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=7&whereCon=PKID=9809"
   },
   {
+    "key": "335",
+    "flag": "0",
+    "index": "번호2130",
+    "subject": "2022-2학기 복학신청 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155319^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=104&whereCon=PKID=155319"
+  },
+  {
     "key": "337",
-    "flag": "1",
+    "flag": "0",
     "index": "번호2857",
     "subject": "[추천채용][대기업/업계2위]홈플러스(주) 운영법무팀 채용",
-    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155384^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=337^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=26&whereCon=PKID=155384"
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155384^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=337^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=29&whereCon=PKID=155384"
+  },
+  {
+    "key": "340",
+    "flag": "0",
+    "index": "번호3",
+    "subject": "[입찰공고] 세종대학교 정원외 외국인 어학당 건강보험 보험사 선정",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155269^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=340^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=7&whereCon=PKID=155269"
   },
   {
     "key": "333",
-    "flag": "1",
-    "index": "번호1587",
-    "subject": "2023학년도 대학입학전형계획(안) 공지_ 변경",
-    "link": "/viewcount.do?rtnUrl=/boardview.do?pkid=150385^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=334^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=3857&whereCon=PKID=150385"
+    "flag": "0",
+    "index": "번호1586",
+    "subject": "삼정 KPMG 회계법인 채용설명회 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155317^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=333^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=87&whereCon=PKID=155317"
   },
   {
-    "key": "335",
-    "flag": "1",
-    "index": "번호2130",
-    "subject": "2022-2학기 복학신청 안내",
-    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155319^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=99&whereCon=PKID=155319"
+    "key": "338",
+    "flag": "0",
+    "index": "번호634",
+    "subject": "2022-2학기 농어촌희망재단 장학금 신청 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=154497^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=338^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=1137&whereCon=PKID=154497"
+  },
+  {
+    "key": "341",
+    "flag": "0",
+    "index": "번호1698",
+    "subject": "세무사 준비반 여부",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155322^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=341^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=3&whereCon=PKID=155322"
   },
   {
     "key": "339",
-    "flag": "1",
+    "flag": "0",
     "index": "번호645",
     "subject": "[건축학과] 계약직원 모집 공고",
-    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155383^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=339^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=25&whereCon=PKID=155383"
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155383^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=339^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=29&whereCon=PKID=155383"
+  },
+  {
+    "key": "334",
+    "flag": "0",
+    "index": "번호81",
+    "subject": "2023학년도 대학입학전형계획(안) 공지_ 변경",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=150385^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=334^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=3895&whereCon=PKID=150385"
   }
 ]

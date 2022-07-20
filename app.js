@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"], partials: ["CHANNEL"] });
 const token = require("./token.json");
-const temp = require("./temp.json");
 const web = require("./web.js");
 const refresh = require("./refresh.js");
 const tag = require("./tag.json");
@@ -79,18 +78,19 @@ const refresh1 = new refresh();
 setInterval(function () {
     setTimeout(async function () {
 
-        function fun(step) {
+        function readfun(step) {
             return new Promise((res, rej) => {
                 setTimeout(() => {
                     const temp = fs.readFileSync('./tag.json', 'utf8');
                     arr = JSON.parse(temp);
-                }, 800)
+                    client.channels.cache.get('994189428903911476').send(arr[step].subject + arr[step].link);
+                }, 5000)
             })
         }
         refresh1.refreshstart();
-        for (step = 0; step < 7; step++) {
+        for (step = 0; step < 9; step++) {
             if (tag[step].flag === "1") {
-                fun(step);
+                readfun(step);
             }
         }
     }, 3000);
