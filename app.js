@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"], partials: ["CHANNEL"] });
 const token = require("./token.json");
 const temp = require("./temp.json");
+const web = require("./web.js")
 
 
 client.on('ready', () => {
@@ -9,14 +10,10 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', (msg) => {
-    if (msg.content === 'notify') {
-        //const msgemb = new Discord.MessageEmbed().setDescription('[' + temp.subject + '](' + temp.link + ')');
-        //const msgemb = new Discord.MessageEmbed().setDescription('[Sejong.Univ Notify Reminder](' + temp.link + ')');
-        //client.channels.cache.get('994189428903911476').send(msgemb);
-        msg.reply(String(temp[0].subject + temp[0].link))
-    }
+    const web1 = new web();
     if (msg.content === '일반') {
-
+        const arr = web1.webstart("334")
+        msg.reply(String(arr[0].subject + arr[0].link))
     }
 });
 
