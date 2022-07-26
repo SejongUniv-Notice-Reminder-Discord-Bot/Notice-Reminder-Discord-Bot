@@ -14,6 +14,7 @@
 - [디스코드 봇 하이퍼링크 보내기][4]
 - [비동기 함수로 명령어 입력과는 상관없이 실행][5]
 - [json 배열 정렬하기(KEY 값으로 정렬하여 태그 붙이기 가능][6]
+- [Node.js Docker Image 파일로 변환][7]
 
 [1]:https://discord.js.org/#/
 [2]:https://koras02.tistory.com/231
@@ -21,6 +22,7 @@
 [4]:https://www.codegrepper.com/code-examples/javascript/+discord.js+hyperlink+in+embed+title
 [5]:https://devjhs.tistory.com/115
 [6]:https://emessell.tistory.com/157
+[7]:https://minjoon950425.tistory.com/131
 
 #### 개발 언어
 Node.js <br>
