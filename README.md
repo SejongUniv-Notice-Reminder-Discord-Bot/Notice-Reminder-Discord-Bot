@@ -27,7 +27,7 @@ Node.js <br>
 ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?&style=for-the-badge&logo=Node.js&logoColor=white)
 
 Discord.js <br>
-![Discord.js](https://camo.githubusercontent.com/43c8d31f321f52cc3e408c29825789c848e7d6c636fef8ca7a856b9603666324/68747470733a2f2f7777772e706e6766696e642e636f6d2f706e67732f622f3130322d313032363939375f6a656666792d646973636f72646a732d646973636f72642d6a732d6c6f676f2d68642d706e672d646f776e6c6f61642e706e67){: width="100%" height="100%"}
+![Discord.js](https://images.opencollective.com/discordjs/529dcce/logo/256.png)
 
 ## 개발 기능
 - [X] 세종대학교 공지 크롤링
@@ -42,4 +42,5 @@ Discord.js <br>
 #### 추후 개발 기능
 - RSS로 코드 리팩토링
 - 공지사항 통합 검색 기능
-- tag.json 정렬 기능
+- tag.json 정렬 및 업데이트 된 새 공지사항에 태그 붙여주기
+- 교내 전화번호 안내 기능 세분화 ex)!컴퓨터공학과 or !컴공 -> 조교실 전화번호, 위치, 사이트 주소 안내
