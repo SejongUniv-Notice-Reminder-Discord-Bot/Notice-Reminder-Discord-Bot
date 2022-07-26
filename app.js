@@ -3,7 +3,7 @@ const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"], parti
 const token = require("./token.json");
 const web = require("./web.js");
 const refresh = require("./refresh.js");
-const tag = require("./tag.json");
+const refresh1 = new refresh()
 const fs = require('fs');
 const PB = require("./phonebook.json");
 const manual = require("./manual.json");
@@ -93,32 +93,24 @@ client.on('messageCreate', async (msg) => {
         msg.channel.send({ embeds: [Embed] });
     }
 });
-
-const refresh1 = new refresh();
-
 setInterval(async function () {
-    setTimeout(async function () {
-        function readfun(step) {
-            return new Promise((res, rej) => {
-                setTimeout(() => {
-                    const temp = fs.readFileSync('./tag.json', 'utf8');
-                    arr = JSON.parse(temp);
-                    const Embed = new Discord.MessageEmbed()
-                        .setTitle(arr[step].subject)
-                        .setURL(arr[step].link)
-                    client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
-                }, 5000)
-            })
-        }
+    function readfun() {
+        return new Promise((res, rej) => {
+            res(refresh1.refreshstart());
+        })
+    }
+    readfun().then(() => {
         const temp = fs.readFileSync('./tag.json', 'utf8');
         arr = JSON.parse(temp);
-        refresh1.refreshstart();
-        for (step = 0; step < 9; step++) {
+        for (let step = 0; step < 9; step++) {
             if (arr[step].flag === "1") {
-                readfun(step);
+                const Embed = new Discord.MessageEmbed()
+                    .setTitle(arr[step].subject)
+                    .setURL(arr[step].link)
+                client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
             }
         }
-    }, 360000000);
-});
+    });
+}, 20000);
 
 client.login(token.token);
