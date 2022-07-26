@@ -7,7 +7,6 @@ const tag = require("./tag.json");
 const fs = require('fs');
 const PB = require("./phonebook.json");
 const manual = require("./manual.json");
-let id;
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
@@ -15,7 +14,6 @@ client.on('ready', () => {
 
 client.on('messageCreate', async (msg) => {
     const web1 = new web();
-    id = msg
     function fun() {
         return new Promise((res, rej) => {
             setTimeout(() => {
@@ -69,7 +67,7 @@ client.on('messageCreate', async (msg) => {
     }
     else if (msg.content === "!전화번호") {
         const Embed = new Discord.MessageEmbed()
-            .setTitle("교내 시설 전화번호 준비!!!! 시작!!!!!");
+            .setTitle("교내 시설 전화번호 시작!!!!!");
         msg.channel.send({ embeds: [Embed] });
         for (let i = 0; i < 21; i++) {
             const Embed = new Discord.MessageEmbed()
@@ -99,24 +97,28 @@ client.on('messageCreate', async (msg) => {
 const refresh1 = new refresh();
 
 setInterval(async function () {
-    function readfun() {
-        return new Promise((res, rej) => {
-            setTimeout(() => {
-                refresh1.refreshstart();
-            }, 5000)
-        })
-    }
-    readfun();
-    const temp = await fs.readFileSync('./tag.json', 'utf8');
-    arr = JSON.parse(temp);
-    for (let step = 0; step < 9; step++) {
-        if (arr[step].flag === "1") {
-            const Embed = new Discord.MessageEmbed()
-                .setTitle(arr[step].subject)
-                .setURL(arr[step].link)
-            client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
+    setTimeout(async function () {
+        function readfun(step) {
+            return new Promise((res, rej) => {
+                setTimeout(() => {
+                    const temp = fs.readFileSync('./tag.json', 'utf8');
+                    arr = JSON.parse(temp);
+                    const Embed = new Discord.MessageEmbed()
+                        .setTitle(arr[step].subject)
+                        .setURL(arr[step].link)
+                    client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
+                }, 5000)
+            })
         }
-    }
-}, 36000000);
+        const temp = fs.readFileSync('./tag.json', 'utf8');
+        arr = JSON.parse(temp);
+        refresh1.refreshstart();
+        for (step = 0; step < 9; step++) {
+            if (arr[step].flag === "1") {
+                readfun(step);
+            }
+        }
+    }, 360000000);
+});
 
 client.login(token.token);
