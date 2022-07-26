@@ -99,24 +99,28 @@ client.on('messageCreate', async (msg) => {
 const refresh1 = new refresh();
 
 setInterval(async function () {
-    function readfun() {
-        return new Promise((res, rej) => {
-            setTimeout(() => {
-                refresh1.refreshstart();
-            }, 5000)
-        })
-    }
-    readfun();
-    const temp = await fs.readFileSync('./tag.json', 'utf8');
-    arr = JSON.parse(temp);
-    for (let step = 0; step < 9; step++) {
-        if (arr[step].flag === "1") {
-            const Embed = new Discord.MessageEmbed()
-                .setTitle(arr[step].subject)
-                .setURL(arr[step].link)
-            client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
+    setTimeout(async function () {
+        function readfun(step) {
+            return new Promise((res, rej) => {
+                setTimeout(() => {
+                    const temp = fs.readFileSync('./tag.json', 'utf8');
+                    arr = JSON.parse(temp);
+                    const Embed = new Discord.MessageEmbed()
+                        .setTitle(arr[step].subject)
+                        .setURL(arr[step].link)
+                    client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
+                }, 5000)
+            })
         }
-    }
-}, 300000);   //36000000 -> 10시간, 테스트용으로 300000->5분으로 변경
+        const temp = fs.readFileSync('./tag.json', 'utf8');
+        arr = JSON.parse(temp);
+        refresh1.refreshstart();
+        for (step = 0; step < 9; step++) {
+            if (arr[step].flag === "1") {
+                readfun(step);
+            }
+        }
+    }, 60000);  //공지사항 모니터링 주기 테스트용으로 1분으로 줄임 기존 : 360000000 -> 10시간
+});
 
 client.login(token.token);
