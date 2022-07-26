@@ -13,12 +13,14 @@
 - [디스코드 채널 아이디 알아내기][3]
 - [디스코드 봇 하이퍼링크 보내기][4]
 - [비동기 함수로 명령어 입력과는 상관없이 실행][5]
+- [json 배열 정렬하기(KEY 값으로 정렬하여 태그 붙이기 가능][6]
 
 [1]:https://discord.js.org/#/
 [2]:https://koras02.tistory.com/231
 [3]:https://neony.tistory.com/3
 [4]:https://www.codegrepper.com/code-examples/javascript/+discord.js+hyperlink+in+embed+title
 [5]:https://devjhs.tistory.com/115
+[6]:https://emessell.tistory.com/157
 
 #### 개발 언어
 Node.js <br>
@@ -40,3 +42,4 @@ Discord.js <br>
 #### 추후 개발 기능
 - RSS로 코드 리팩토링
 - 공지사항 통합 검색 기능
+- tag.json 정렬 기능
