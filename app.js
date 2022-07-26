@@ -117,6 +117,6 @@ setInterval(async function () {
             client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
         }
     }
-}, 36000000);
+}, 300000);   //36000000 -> 10시간, 테스트용으로 300000->5분으로 변경
 
 client.login(token.token);
