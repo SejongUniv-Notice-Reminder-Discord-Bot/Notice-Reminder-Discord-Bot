@@ -94,6 +94,7 @@ client.on('messageCreate', async (msg) => {
     }
 });
 setInterval(async function () {
+
     function readfun() {
         return new Promise((res, rej) => {
             res(refresh1.refreshstart());
@@ -112,5 +113,6 @@ setInterval(async function () {
         }
     });
 }, 20000);
+
 
 client.login(token.token);
