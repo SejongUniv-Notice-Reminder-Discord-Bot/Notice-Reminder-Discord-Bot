@@ -19,7 +19,7 @@ client.on('messageCreate', async (msg) => {
             setTimeout(() => {
                 const temp = fs.readFileSync('./temp.json', 'utf8');
                 const arr = JSON.parse(temp)
-                for (let i = 0; i < 3; i++) {
+                for (let i = 0; i < 5; i++) {
                     const Embed = new Discord.MessageEmbed()
                         .setTitle(arr[i].subject)
                         .setURL(arr[i].link)
