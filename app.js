@@ -93,6 +93,7 @@ client.on('messageCreate', async (msg) => {
         msg.channel.send({ embeds: [Embed] });
     }
 });
+
 setInterval(async function () {
 
     function readfun() {
@@ -103,16 +104,51 @@ setInterval(async function () {
     readfun().then(() => {
         const temp = fs.readFileSync('./tag.json', 'utf8');
         arr = JSON.parse(temp);
+        let ck = 0;
         for (let step = 0; step < 9; step++) {
             if (arr[step].flag === "1") {
+                if(ck === 0){
+                    ck = 1;
+                    const newEmbed = new Discord.MessageEmbed()
+                    .setTitle("새로운 공지사항입니다")
+                    client.channels.cache.get('994189428903911476').send({ embeds: [newEmbed] });
+                }
+                let m_tag = " ";
+                if(arr[step].key==="333"){
+                    m_tag = "일반";
+                }
+                else if(arr[step].key==="334"){
+                    m_tag = "입학";
+                }
+                else if(arr[step].key==="335"){
+                    m_tag = "학사";
+                }
+                else if(arr[step].key==="336"){
+                    m_tag = "국제교류";
+                }
+                else if(arr[step].key==="337"){
+                    m_tag = "취업";
+                }
+                else if(arr[step].key==="338"){
+                    m_tag = "장학";
+                }
+                else if(arr[step].key==="339"){
+                    m_tag = "교내모집";
+                }
+                else if(arr[step].key==="340"){
+                    m_tag = "입찰공고";
+                }
+                else if(arr[step].key==="341"){
+                    m_tag = "경시대회/공모전";
+                }
                 const Embed = new Discord.MessageEmbed()
-                    .setTitle(arr[step].subject)
+                    .setTitle("[" + m_tag + "] " + arr[step].subject)
                     .setURL(arr[step].link)
                 client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
             }
         }
     });
-}, 20000);
+}, 600000);`//10분마다 공지사항 
 
 
 client.login(token.token);
