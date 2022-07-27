@@ -148,7 +148,7 @@ setInterval(async function () {
             }
         }
     });
-}, 600000); //10분마다 공지사항 
+}, 1200000); //20분마다 공지사항 모니터링
 
 
 client.login(token.token);
