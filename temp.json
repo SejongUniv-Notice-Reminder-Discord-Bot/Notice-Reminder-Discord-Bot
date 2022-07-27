@@ -1,1 +1,27 @@
-[{"index":"번호2132","subject":"2022-2학기 조기졸업 신청 안내(Notification on Application ...","link":"http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155515^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=105&whereCon=PKID=155515"},{"index":"2131","subject":"2022-2학기 관심과목담기 안내/How to Select Courses of Inte...","link":"http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155474^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=264&whereCon=PKID=155474"},{"index":"2130","subject":"2022-2학기 복학신청 안내","link":"http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155319^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=588&whereCon=PKID=155319"}]
+[
+  {
+    "index": "번호2132",
+    "subject": "2022-2학기 조기졸업 신청 안내(Notification on Application ...",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155515^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=117&whereCon=PKID=155515"
+  },
+  {
+    "index": "2131",
+    "subject": "2022-2학기 관심과목담기 안내/How to Select Courses of Inte...",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155474^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=280&whereCon=PKID=155474"
+  },
+  {
+    "index": "2130",
+    "subject": "2022-2학기 복학신청 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155319^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=594&whereCon=PKID=155319"
+  },
+  {
+    "index": "2129",
+    "subject": "2022-2학기 휴학신청 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155310^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=566&whereCon=PKID=155310"
+  },
+  {
+    "index": "2128",
+    "subject": "2022-2학기 전부(전과) 면접 장소 및 일시 안내",
+    "link": "http://board.sejong.ac.kr//viewcount.do?rtnUrl=/boardview.do?pkid=155056^currentPage=1^searchField=ALL^siteGubun=19^menuGubun=1^bbsConfigFK=335^searchLowItem=ALL&searchValue=&gubun=&tableName=SJU_BBSDATA&fieldName=VIEWCOUNT&viewNum=1001&whereCon=PKID=155056"
+  }
+]
