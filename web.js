@@ -16,7 +16,7 @@ class web {
                 console.log(err);
                 return;
             }
-            for (let i = 1; i < 4; i++) {
+            for (let i = 1; i < 6; i++) {
                 const key = `tr:nth-child(${i})`
                 arr.push({
                     index: $(key).find(".index").text(),
