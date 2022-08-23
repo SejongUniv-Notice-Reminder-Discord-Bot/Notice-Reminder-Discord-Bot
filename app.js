@@ -144,7 +144,7 @@ setInterval(async function () {
                 const Embed = new Discord.MessageEmbed()
                     .setTitle("[" + m_tag + "] " + arr[step].subject)
                     .setURL(arr[step].link)
-                client.channels.cache.get('994189428903911476').send({ embeds: [Embed] });
+                client.channels.cache.get('816574213573967892').send({ embeds: [Embed] });
             }
         }
     });
