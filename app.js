@@ -111,7 +111,7 @@ setInterval(async function () {
                     ck = 1;
                     const newEmbed = new Discord.MessageEmbed()
                     .setTitle("새로운 공지사항입니다")
-                    client.channels.cache.get('994189428903911476').send({ embeds: [newEmbed] });
+                    client.channels.cache.get('816574213573967892').send({ embeds: [newEmbed] });
                 }
                 let m_tag = " ";
                 if(arr[step].key==="333"){
