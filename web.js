@@ -25,6 +25,8 @@ class web {
                 })
             }
             const webJson = JSON.stringify(arr)
+
+            //json 대신 DB에 저장
             fs.writeFileSync('./temp.json', webJson)
         });
     }

@@ -5,11 +5,15 @@ const web = require("./web.js");
 const refresh = require("./refresh.js");
 const refresh1 = new refresh()
 const fs = require('fs');
+
 const PB = require("./phonebook.json");
 const manual = require("./manual.json");
 
+const db = require('./db');
+
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    db.connect();   // DB Connect
 });
 
 client.on('messageCreate', async (msg) => {
@@ -17,8 +21,27 @@ client.on('messageCreate', async (msg) => {
     function fun() {
         return new Promise((res, rej) => {
             setTimeout(() => {
+                //JSON 대신 DB에서 data 받아오기
+                //const SQL = "Select * from discord;";
                 const temp = fs.readFileSync('./temp.json', 'utf8');
                 const arr = JSON.parse(temp)
+                /*
+                connection.query(SQL,function(err,results,fields){
+                    if(err){
+                        console.error(err.toSting());
+                        return res.status(403).json({
+                            error: err,
+                            errorString: err.toSting()
+                        })
+                    }
+                    for (let i = 0; i < 5; i++) {
+                        const Embed = new Discord.MessageEmbed()
+                            .setTitle(results[i].subject)
+                            .setURL(results[i].link)
+                        msg.channel.send({ embeds: [Embed] });
+                    }
+                });
+                */
                 for (let i = 0; i < 5; i++) {
                     const Embed = new Discord.MessageEmbed()
                         .setTitle(arr[i].subject)
@@ -102,6 +125,52 @@ setInterval(async function () {
         })
     }
     readfun().then(() => {
+
+        const connection = db.return_connection();
+
+        const SQL = 'select * from tag where JSON_EXTRACT(data,\'$.flag\') = "1";';
+        connection.query(SQL,function(err,results,fields){
+            if(!results || results.length === 0){
+                return ;
+            }
+            const newEmbed = new Discord.MessageEmbed()
+                    .setTitle("새로운 공지사항입니다")
+                    client.channels.cache.get('739523137976401970').send({ embeds: [newEmbed] });
+            
+            results.map(notice=>{
+                if(JSON.parse(notice.data).flag==="1"){
+                    let m_tag = " ";
+                    if(JSON.parse(notice.data).key==="333"){
+                        m_tag = "일반";
+                    }
+                    else if(JSON.parse(notice.data).key==="335"){
+                        m_tag = "학사";
+                    }
+                    else if(JSON.parse(notice.data).key==="336"){
+                        m_tag = "국제교류";
+                    }
+                    else if(JSON.parse(notice.data).key==="337"){
+                        m_tag = "취업";
+                    }
+                    else if(JSON.parse(notice.data).key==="338"){
+                        m_tag = "장학";
+                    }
+                    else if(JSON.parse(notice.data).key==="339"){
+                        m_tag = "교내모집";
+                    }
+                    else if(JSON.parse(notice.data).key==="340"){
+                        m_tag = "입찰공고";
+                    }
+                    const Embed = new Discord.MessageEmbed()
+                        .setTitle("[" + m_tag + "] " + JSON.parse(notice.data).subject)
+                        .setURL(JSON.parse(notice.data).link)
+                    client.channels.cache.get('739523137976401970').send({ embeds: [Embed] });
+                    //client.channels.cache.get('816574213573967892').send({ embeds: [Embed] });
+                }
+            });
+        });
+
+        /*
         const temp = fs.readFileSync('./tag.json', 'utf8');
         arr = JSON.parse(temp);
         let ck = 0;
@@ -111,14 +180,12 @@ setInterval(async function () {
                     ck = 1;
                     const newEmbed = new Discord.MessageEmbed()
                     .setTitle("새로운 공지사항입니다")
-                    client.channels.cache.get('816574213573967892').send({ embeds: [newEmbed] });
+                    client.channels.cache.get('739523137976401970').send({ embeds: [newEmbed] });
+                    //client.channels.cache.get('816574213573967892').send({ embeds: [newEmbed] });
                 }
                 let m_tag = " ";
                 if(arr[step].key==="333"){
                     m_tag = "일반";
-                }
-                else if(arr[step].key==="334"){
-                    m_tag = "입학";
                 }
                 else if(arr[step].key==="335"){
                     m_tag = "학사";
@@ -138,17 +205,16 @@ setInterval(async function () {
                 else if(arr[step].key==="340"){
                     m_tag = "입찰공고";
                 }
-                else if(arr[step].key==="341"){
-                    m_tag = "경시대회/공모전";
-                }
                 const Embed = new Discord.MessageEmbed()
                     .setTitle("[" + m_tag + "] " + arr[step].subject)
                     .setURL(arr[step].link)
-                client.channels.cache.get('816574213573967892').send({ embeds: [Embed] });
+                client.channels.cache.get('739523137976401970').send({ embeds: [Embed] });
+                //client.channels.cache.get('816574213573967892').send({ embeds: [Embed] });
             }
         }
+        */
     });
-}, 1200000); //20분마다 공지사항 모니터링
+}, 12000); //20분마다 공지사항 모니터링
 
 
 client.login(token.token);
