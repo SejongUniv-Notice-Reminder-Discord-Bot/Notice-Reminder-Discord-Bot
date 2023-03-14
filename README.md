@@ -27,6 +27,7 @@
 #### 개발 언어
 Node.js <br>
 ![Node.js](https://img.shields.io/badge/Node.js-339933.svg?&style=for-the-badge&logo=Node.js&logoColor=white)
+![discord](https://img.shields.io/badge/discord-000000.svg?&style=for-the-badge&logo=discord&logoColor=#5865F2)
 
 Discord.js <br>
 ![Discord.js](https://images.opencollective.com/discordjs/529dcce/logo/256.png)
