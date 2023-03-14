@@ -6,8 +6,8 @@ class refresh {
     async refreshstart() {
         var arr = [];
 
-        const temp = fs.readFileSync('./tag.json', 'utf8');
-        const truarr = JSON.parse(temp)
+        //const temp = fs.readFileSync('./tag.json', 'utf8');
+        //const truarr = JSON.parse(temp)
         function tagRefresh(key) {
             return new Promise((res, rej) => {
                 setTimeout(() => {

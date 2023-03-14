@@ -16,6 +16,7 @@ class web {
                 console.log(err);
                 return;
             }
+            //338의 경우 4 ~ 8 까지
             for (let i = 1; i < 6; i++) {
                 const key = `tr:nth-child(${i})`
                 arr.push({
@@ -26,8 +27,12 @@ class web {
             }
             const webJson = JSON.stringify(arr)
 
+            //console.log(webJson);
+            //res = webJson;
+            
             //json 대신 DB에 저장
             fs.writeFileSync('./temp.json', webJson)
+            
         });
     }
 }

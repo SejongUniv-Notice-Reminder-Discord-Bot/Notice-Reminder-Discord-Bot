@@ -52,40 +52,41 @@ client.on('messageCreate', async (msg) => {
         })
     }
     if (msg.content === "!일반" || msg.content === "!공지") {
-        web1.webstart("333")
+        //console.log("일반");
+        web1.webstart("333");
         fun();
     }
     else if (msg.content === "!입학") {
-        web1.webstart("334")
-        fun()
+        web1.webstart("334");
+        fun();
     }
     else if (msg.content === "!학사") {
-        web1.webstart("335")
-        fun()
+        web1.webstart("335");        
+        fun();
     }
     else if (msg.content === "!국제교류") {
-        web1.webstart("336")
-        fun()
+        web1.webstart("336");
+        fun();
     }
     else if (msg.content === "!취업") {
-        web1.webstart("337")
-        fun()
+        web1.webstart("337");
+        fun();
     }
     else if (msg.content === "!장학") {
-        web1.webstart("338")
-        fun()
+        web1.webstart("338");
+        fun();
     }
     else if (msg.content === "!교내모집") {
-        web1.webstart("339")
-        fun()
+        web1.webstart("339");
+        fun();
     }
     else if (msg.content === "!입찰공고") {
-        web1.webstart("340")
-        fun()
+        web1.webstart("340");
+        fun();
     }
     else if (msg.content === "!경시대회/공모전") {
-        web1.webstart("341")
-        fun()
+        web1.webstart("341");
+        fun();
 
     }
     else if (msg.content === "!전화번호") {
@@ -214,7 +215,7 @@ setInterval(async function () {
         }
         */
     });
-}, 12000); //20분마다 공지사항 모니터링
+}, 1200000); //20분마다 공지사항 모니터링
 
 
 client.login(token.token);
