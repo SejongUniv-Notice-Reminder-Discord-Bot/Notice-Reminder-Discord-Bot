@@ -1,6 +1,5 @@
 const SQL_info = require('./SQL_info.json')
 const mysql = require('mysql');
-//const tag = require('./tag.json');
 var connection;
 
 const conn = {

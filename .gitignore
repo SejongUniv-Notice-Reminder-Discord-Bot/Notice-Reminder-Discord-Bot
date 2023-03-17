@@ -2,6 +2,7 @@
 token.json
 SQL_info.json
 node_modules
+temp.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
